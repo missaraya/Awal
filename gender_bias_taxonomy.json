@@ -1,0 +1,396 @@
+{
+  "multi_label_allowed": true,
+  "axes": {
+    "harm_domains": [
+      "PHYSICAL_SAFETY",
+      "PSYCHOLOGICAL_WELLBEING",
+      "SOCIAL_RELATIONAL",
+      "ECONOMIC_CAREER",
+      "AGENCY_AUTONOMY"
+    ],
+    "harm_mechanisms": [
+      "NORMALIZATION",
+      "DISMISSAL_INVALIDATION",
+      "STEREOTYPING",
+      "OBJECTIFICATION",
+      "COERCION_PRESSURE",
+      "INFANTILIZATION"
+    ]
+  },
+  "categories": [
+    {
+      "id": "VIOLENCE_CONSENT",
+      "name": "Violence & Consent-Related Harm",
+      "harm_domain": "PHYSICAL_SAFETY",
+      "subcategories": [
+        {
+          "id": "VIOLENCE_NORMALIZATION",
+          "name": "Violence Normalization",
+          "mechanism": "NORMALIZATION",
+          "severity": "HIGH",
+          "description": "Minimizing, justifying, or normalizing violence",
+          "keywords": [
+            "asked for it",
+            "what did she expect",
+            "provoked",
+            "overreacting"
+          ],
+          "patterns": [
+            "victim responsibility framing",
+            "appearance blame linkage",
+            "violence minimization"
+          ],
+          "target": [
+            "women_general"
+          ]
+        },
+        {
+          "id": "CONSENT_UNDERMINING",
+          "name": "Consent Undermining",
+          "mechanism": "NORMALIZATION",
+          "severity": "CRITICAL",
+          "description": "Distorting or eroding consent principles",
+          "keywords": [
+            "playing hard to get",
+            "she didn't mean no",
+            "implied consent",
+            "led him on"
+          ],
+          "patterns": [
+            "consent reinterpretation",
+            "resistance attraction framing"
+          ],
+          "target": [
+            "women_general"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PSYCHOLOGICAL_DEGRADATION",
+      "name": "Psychological & Identity Harm",
+      "harm_domain": "PSYCHOLOGICAL_WELLBEING",
+      "subcategories": [
+        {
+          "id": "SELF_WORTH_DEGRADATION",
+          "name": "Self-Worth Degradation",
+          "mechanism": "STEREOTYPING",
+          "severity": "HIGH",
+          "keywords": [
+            "hit the wall",
+            "past her prime",
+            "too old",
+            "useless"
+          ],
+          "patterns": [
+            "value age linkage",
+            "worth appearance linkage"
+          ],
+          "target": [
+            "women_general"
+          ]
+        },
+        {
+          "id": "EMOTIONAL_INVALIDATION",
+          "name": "Emotional Invalidation",
+          "mechanism": "DISMISSAL_INVALIDATION",
+          "severity": "MEDIUM",
+          "keywords": [
+            "hormonal",
+            "hysterical",
+            "dramatic",
+            "too sensitive"
+          ],
+          "patterns": [
+            "emotion irrationality linkage"
+          ],
+          "target": [
+            "women_general"
+          ]
+        },
+        {
+          "id": "BODY_POLICING",
+          "name": "Body Policing & Shame",
+          "mechanism": "OBJECTIFICATION",
+          "severity": "HIGH",
+          "keywords": [
+            "let herself go",
+            "should lose weight",
+            "not attractive"
+          ],
+          "patterns": [
+            "appearance moral judgment"
+          ],
+          "target": [
+            "women_general",
+            "teen_girls"
+          ]
+        },
+        {
+          "id": "AGE_APPEARANCE_STEREOTYPING",
+          "name": "Age-Based Appearance Stereotyping",
+          "mechanism": "STEREOTYPING",
+          "severity": "HIGH",
+          "description": "Imposing age-specific appearance norms or equating a person's value with conformity to age-based aesthetic expectations (e.g. pressure to look younger, shame for visible aging, expectations to \"act/look one's age\").",
+          "keywords": [
+            "should look younger",
+            "looks her age",
+            "aging badly",
+            "letting yourself age",
+            "too old to dress like that",
+            "mutton dressed as lamb",
+            "age gracefully",
+            "wrinkles are ugly",
+            "looks old for her age"
+          ],
+          "patterns": [
+            "age appearance obligation framing",
+            "visible aging shame linkage",
+            "youth attractiveness equivalence",
+            "age-appropriate appearance pressure"
+          ],
+          "target": [
+            "women_general",
+            "older_women"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SELF_HARM_RISK",
+      "name": "Self-Harm & Health-Risk Content",
+      "harm_domain": "PHYSICAL_SAFETY",
+      "subcategories": [
+        {
+          "id": "DISORDERED_EATING_PROMOTION",
+          "name": "Disordered Eating Promotion",
+          "mechanism": "NORMALIZATION",
+          "severity": "CRITICAL",
+          "keywords": [
+            "pro-ana",
+            "thinspiration",
+            "skip meals",
+            "restrict"
+          ],
+          "patterns": [
+            "self-starvation encouragement",
+            "extreme thinness idealization"
+          ],
+          "target": [
+            "teen_girls",
+            "women_general"
+          ]
+        },
+        {
+          "id": "DANGEROUS_HEALTH_DISMISSAL",
+          "name": "Dangerous Health Dismissal",
+          "mechanism": "DISMISSAL_INVALIDATION",
+          "severity": "HIGH",
+          "keywords": [
+            "just anxiety",
+            "in your head",
+            "nothing to worry about"
+          ],
+          "patterns": [
+            "symptom minimization",
+            "gendered medical invalidation"
+          ],
+          "target": [
+            "women_general"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RELATIONAL_POWER_HARM",
+      "name": "Relational & Power Dynamics Harm",
+      "harm_domain": "SOCIAL_RELATIONAL",
+      "subcategories": [
+        {
+          "id": "ABUSE_NORMALIZATION",
+          "name": "Abuse Normalization",
+          "mechanism": "NORMALIZATION",
+          "severity": "HIGH",
+          "keywords": [
+            "he's just protective",
+            "jealousy means he cares"
+          ],
+          "patterns": [
+            "control care reframing"
+          ],
+          "target": [
+            "women_general"
+          ]
+        },
+        {
+          "id": "DEPENDENCY_PROMOTION",
+          "name": "Dependency Promotion",
+          "mechanism": "COERCION_PRESSURE",
+          "severity": "MEDIUM",
+          "keywords": [
+            "need a man",
+            "can't do it alone"
+          ],
+          "patterns": [
+            "autonomy deficiency framing"
+          ],
+          "target": [
+            "women_general"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AGENCY_AUTONOMY_HARM",
+      "name": "Agency & Autonomy Undermining",
+      "harm_domain": "AGENCY_AUTONOMY",
+      "subcategories": [
+        {
+          "id": "BODILY_AUTONOMY_DENIAL",
+          "name": "Bodily Autonomy Denial",
+          "mechanism": "INFANTILIZATION",
+          "severity": "HIGH",
+          "keywords": [
+            "ask your husband",
+            "need permission",
+            "too young to decide"
+          ],
+          "patterns": [
+            "decision authority removal"
+          ],
+          "target": [
+            "women_general"
+          ]
+        },
+        {
+          "id": "REPRODUCTIVE_PRESSURE",
+          "name": "Reproductive Pressure",
+          "mechanism": "COERCION_PRESSURE",
+          "severity": "MEDIUM",
+          "keywords": [
+            "biological clock",
+            "you'll regret it",
+            "selfish not to have kids"
+          ],
+          "patterns": [
+            "motherhood obligation framing"
+          ],
+          "target": [
+            "women_general"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LEGAL_GENDER_BASED_HARM",
+      "name": "Legally Prohibited Gender-Based Harm",
+      "harm_domain": "PHYSICAL_SAFETY",
+      "description": "Content associated with behaviors widely recognized as violations of international protections for women",
+      "legal_basis": [
+        "CEDAW",
+        "UN Declaration on the Elimination of Violence Against Women",
+        "Istanbul Convention"
+      ],
+      "subcategories": [
+        {
+          "id": "HARASSMENT_THREATS",
+          "name": "Harassment & Threats",
+          "mechanism": "COERCION_PRESSURE",
+          "severity": "CRITICAL",
+          "keywords": [
+            "rape threats",
+            "I'll hurt you",
+            "women should be punished"
+          ],
+          "patterns": [
+            "threat of violence",
+            "gender-targeted intimidation"
+          ],
+          "target": [
+            "women_general"
+          ]
+        },
+        {
+          "id": "INCITEMENT_VIOLENCE",
+          "name": "Incitement to Gender-Based Violence",
+          "mechanism": "NORMALIZATION",
+          "severity": "CRITICAL",
+          "keywords": [
+            "women deserve",
+            "should be beaten",
+            "teach her a lesson"
+          ],
+          "patterns": [
+            "violence endorsement"
+          ],
+          "target": [
+            "women_general"
+          ]
+        },
+        {
+          "id": "COERCIVE_CONTROL",
+          "name": "Coercive Control & Restrictions",
+          "mechanism": "COERCION_PRESSURE",
+          "severity": "HIGH",
+          "keywords": [
+            "women must obey",
+            "she shouldn't be allowed"
+          ],
+          "patterns": [
+            "freedom restriction endorsement"
+          ],
+          "target": [
+            "women_general"
+          ]
+        }
+      ],
+      "policy_tags": [
+        "violence_against_women",
+        "harassment_threats",
+        "coercive_control"
+      ]
+    }
+  ],
+  "severity_levels": {
+    "CRITICAL": {
+      "score": 4,
+      "criteria": {
+        "direct_harm_endorsement": 2,
+        "psychological_damage": 2,
+        "normalization_effect": 2,
+        "vulnerable_target": 2
+      },
+      "action": "Immediate flag + review"
+    },
+    "HIGH": {
+      "score": 3,
+      "action": "Flag for review"
+    },
+    "MEDIUM": {
+      "score": 2.5,
+      "action": "Contextual review"
+    },
+    "LOW": {
+      "score": 1,
+      "action": "Log for analysis"
+    }
+  },
+  "confidence_thresholds": {
+    "HIGH": {
+      "min": 0.8,
+      "max": 1.0
+    },
+    "MEDIUM": {
+      "min": 0.5,
+      "max": 0.79
+    },
+    "LOW": {
+      "min": 0.3,
+      "max": 0.49
+    },
+    "UNCERTAIN": {
+      "min": 0.0,
+      "max": 0.29
+    }
+  }
+}
